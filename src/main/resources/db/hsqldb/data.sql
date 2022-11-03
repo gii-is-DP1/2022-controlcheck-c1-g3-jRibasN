@@ -8,8 +8,14 @@ INSERT INTO authorities(id,username,authority) VALUES (2,'owner1','owner');
 INSERT INTO users(username,password,enabled) VALUES ('vet1','v3t',TRUE);
 INSERT INTO authorities(id,username,authority) VALUES (3,'vet1','veterinarian');
 
+INSERT INTO rooms(id, name, secure, size, room_type) VALUES (1, 'Big room for dangerous animals', 1, 6.50, 1);
+INSERT INTO rooms(id, name, secure, size, room_type) VALUES (2, 'Medium box', 0, 1.50, 2);
+
+INSERT INTO recoveryRoomTypes(id, name) VALUES(1, 'room');
+INSERT INTO recoveryRoomTypes(id, name) VALUES(2, 'box');
+
 INSERT INTO vets(id, first_name,last_name) VALUES (1, 'James', 'Carter');
-INSERT INTO vets(id, first_name,last_name) VALUES (2, 'Helen', 'Leary');
+INSERT INTO vets(id, first_name,last_name) VALUES (2, 'Helen', 'Leary');    
 INSERT INTO vets(id, first_name,last_name) VALUES (3, 'Linda', 'Douglas');
 INSERT INTO vets(id, first_name,last_name) VALUES (4, 'Rafael', 'Ortega');
 INSERT INTO vets(id, first_name,last_name) VALUES (5, 'Henry', 'Stevens');
